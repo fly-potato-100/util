@@ -1,0 +1,19 @@
+# 查看CPU信息
+lscpu
+cat /proc/cpuinfo
+
+# 查看内存信息
+free -h
+cat /proc/meminfo
+
+# 查看磁盘信息
+fdisk -l
+df -h
+
+# 查看系统版本
+uname -a
+cat /proc/version
+cat /etc/issue
+cat /etc/redhat-release
+lsb_release -a
+

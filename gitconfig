@@ -1,0 +1,22 @@
+[user]
+	name = fly-potato-100
+	email = 598181057@qq.com
+[color]
+	ui = true
+[alias]
+	st = "status"
+	ci = "commit"
+	co = "checkout"
+	br = "branch -vv"
+	ps = "push origin"
+	pl = "pull origin"
+	lg = "log --color --pretty=oneline"
+	llg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	df = "diff"
+	dfc = "diff --cached"
+	cl = "clean -df"
+	rv = "checkout -- ."
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore_global
