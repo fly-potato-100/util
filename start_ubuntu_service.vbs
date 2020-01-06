@@ -3,4 +3,4 @@
 ' 打开wsl，以root创建可执行脚本/etc/init.wsl，其中加入一行/etc/init.d/ssh $1，保存
 ' 打开wsl，以root编辑/etc/sudoers，其中加入一行%sudo ALL=NOPASSWD: /etc/init.wsl，保存
 Set ws = WScript.CreateObject("WScript.Shell")
-ws.run "C:\Ubuntu18.04\ubuntu1804.exe run sudo /etc/init.wsl start", vbhide
+ws.run "wsl -d Ubuntu-18.04 -u root /etc/init.wsl start", vbhide
